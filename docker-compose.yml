@@ -9,6 +9,7 @@ services:
     environment:
       WAIT_HOSTS: swarm01
       IMAGE_NAME: ${IMAGE_NAME}
+      IMAGE_TEST_NEW_VALUE: ${IMAGE_TEST_NEW_VALUE}
     deploy:
       placement:
         constraints:
