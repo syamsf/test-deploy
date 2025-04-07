@@ -10,6 +10,8 @@ services:
       WAIT_HOSTS: swarm01
       IMAGE_NAME: ${IMAGE_NAME}
       IMAGE_TEST_NEW_VALUE: ${IMAGE_TEST_NEW_VALUE}
+      TEST_PASSWORD: ${TEST_PASSWORD}
+      TEST_PASSWORD_TOKEN: ${TEST_PASSWORD_TOKEN}
     deploy:
       placement:
         constraints:
