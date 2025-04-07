@@ -6,3 +6,7 @@ services:
     restart: always
     environment:
       WAIT_HOSTS: swarm01
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
