@@ -4,6 +4,8 @@ services:
   app: 
     image: httpd:latest
     restart: always
+    env_file:
+      - stack.env
     environment:
       WAIT_HOSTS: swarm01
       IMAGE_NAME: ${IMAGE_NAME}
