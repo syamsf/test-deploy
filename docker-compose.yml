@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   app: 
-    image: httpd:lastest
+    image: httpd:latest
     restart: always
     environment:
       WAIT_HOSTS: swarm01
