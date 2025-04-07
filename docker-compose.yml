@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  app: 
+    image: apache:lastest
+    restart: always
+    environment:
+      WAIT_HOSTS: swarm01
