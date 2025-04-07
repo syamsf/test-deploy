@@ -6,6 +6,7 @@ services:
     restart: always
     environment:
       WAIT_HOSTS: swarm01
+      IMAGE_NAME: ${IMAGE_NAME}
     deploy:
       placement:
         constraints:
